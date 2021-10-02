@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 1% 17% 1% 17%;
+  padding: 1%;
+}
+header {
+  background-color: rgb(235, 230, 230);
+  background-image: url("../images/flywheel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  height: 200px;
+}
+nav a {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 60px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  padding: 0px 20px;
+  margin: 0% 2% 5% 2%;
+  border-radius: 5px;
+  line-height: 60px;
+}
+.active {
+  background-color: #ffffff;
+}
+h1 {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 150%;
+  font-weight: bold;
+}
+h2 {
+  color: rgb(0, 0, 0);
+  text-transform: capitalize;
+}
+.left {
+  display: block;
+  position: absolute;
+  width: 18%;
+  background: #777613;
+  padding: 0% 2%;
+}
+.left img {
+  display: block;
+  width: 90%;
+  margin: 15% auto;
+  border: 2px solid rgb(0, 0, 0);
+}
+.right {
+  position: absolute;
+  left: 36%;
+  top: 24%;
+  display: block;
+  width: 43%;
+  padding: 0.5%;
+  font-size: larger;
+}
+table {
+  margin: 15px auto;
+  width: 90%;
+}
+
+
+/*The table headings should have a border, background color, and at least one other property.*/
+th {
+  height: 50px;
+  line-height: 50px;
+  text-shadow: 2px -13px 7px rgba(34, 159, 15, 0.25);
+  color: #ffffff;
+  text-align: center;
+  padding-left: 10px;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
+    0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
+
+  -webkit-border-radius: 5px 5px 0px 0px;
+  -moz-border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: solid 3px #44c807;
+  background: rgb(16, 121, 0);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(16, 121, 0, 1) 51%,
+    rgba(184, 250, 147, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(16, 121, 0, 1) 51%,
+    rgba(184, 250, 147, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(16, 121, 0, 1) 51%,
+    rgba(184, 250, 147, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#107900",endColorstr="#b8fa93",GradientType=1);
+}
+/*---------------------------------*/
+
+
+
+
+/*Style the table so that the text in the first column is left-aligned and the text in the other two columns is centered */
+/*Set the opacity of the table rows to a value between .6 and .8 (make sure it is still visible) */
+
+td{
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+}
+
+tr :first-child {
+  text-align: left;
+}
+/*-------------------------------*/
+
+
+/*opacity 1*/
+tr:hover {
+  color: rgba(0, 0, 0, 1);
+}
+/**---------------------/
