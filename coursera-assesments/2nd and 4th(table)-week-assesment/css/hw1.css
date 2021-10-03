@@ -79,14 +79,13 @@ table {
 th {
   height: 50px;
   line-height: 50px;
-  text-shadow: 2px -13px 7px rgba(34, 159, 15, 0.25);
+  text-shadow: 2px 2px 2px rgba(206,89,55,0);
   border-spacing: 15px;
   color: #ffffff;
   text-align: center;
   padding-left: 10px;
 
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
-    0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
+
 /*Top corners with prefixes*/
   -webkit-border-radius: 5px 5px 0px 0px;
   -moz-border-radius: 5px 5px 0px 0px;
@@ -121,13 +120,16 @@ th {
 
 td{
   text-align: center;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgb(0, 0, 0);
   height: 40px;
   line-height: 40px;
   padding: 2px 0px 2px 10px;
   background-color: rgba(200, 245, 245,0.6);
   border:2px solid rgb(160, 238, 238);
-  text-shadow: 1px 4px 8px rgba(0,0,0,0.7);
+  text-shadow: 1px 2px 2px rgba(0,0,0,0.4);
+}
+tr{
+  opacity: 0.7;
 }
 
 tr :first-child {
@@ -137,8 +139,7 @@ tr :first-child {
 
 
 /*Change the opacity of a row when it is hovered over */
-tr td:hover {
-  color: rgba(0, 0, 0, 1);
-  cursor: default;
+tr:hover {
+opacity: 1;
 }
 /**---------------------/
