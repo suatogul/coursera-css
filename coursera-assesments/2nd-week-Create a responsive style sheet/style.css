@@ -62,3 +62,83 @@ footer {
   text-align: center;
   text-transform: uppercase;
 }
+/* -------------------------------large view*/
+@media screen and (min-width: 900px) {
+  body {
+    font-size: 125%;
+  }
+  body {
+    width: 70%;
+    margin: 0 auto;
+  }
+  header,
+  footer {
+    background-color: initial;
+    padding: 0;
+    margin: 0;
+  }
+  /*a.    Images are visible*/
+  img {
+    display: initial;
+    width: 23%;
+  }
+  /*b.    Sections are next to each other*/
+  #left {
+    float: left;
+    width: 30%;
+    margin-left: 1%;
+  }
+  #center {
+    width: 60%;
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  /* c.         Additional text in/after the h1 (See how now it
+  says “I guess”??) */
+  header h1::after {
+    content: "(I guess...)";
+  }
+  #center div:last-child {
+    margin: 1em 1em;
+  }
+  footer p {
+    margin: 0;
+    font-size: 75%;
+  }
+}
+
+/* -------------------------------print view*/
+@media print {
+  body {
+    margin: 1%;
+    padding: 1%;
+    background-color: initial;
+  }
+  header h1 {
+    font-size: 1em;
+  }
+  nav a {
+    text-decoration: underline;
+    border: 0;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+  }
+  header,
+  footer {
+    padding: 0;
+    margin: 0;
+  }
+  footer p {
+    font-size: 1.5rem;
+  }
+  img {
+    display: none;
+  }
+  .myClass {
+    /* Safari and Chrome */
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+}
